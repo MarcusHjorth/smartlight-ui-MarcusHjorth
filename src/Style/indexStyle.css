@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+
+:root {
+    --color-primary: #F6F8FB;
+    --color-secondary: #FFFFFF;
+    --color-background: #0A4DA2;
+    --color-DarkPurple: #002D67;
+}
+
+
+body {
+    background-color: var(--color-background);
+    margin: 0px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 22px;
+}
+
+.Home_Header {
+    padding: 20px;
+    margin-top: 30px;
+}
+.Header_P {
+    color: var(--color-primary);
+    width: 50px;
+    margin: 0px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+
+.Rooms {
+    position: absolute;
+    bottom: 75px;
+    
+    background-color: var(--color-primary);
+    color: var(--color-DarkPurple);
+    height: 550px;
+    width: 350px;
+
+    padding: 20px;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.Nav {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 75px;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.NavIcons {
+    margin: 0px;
+}
