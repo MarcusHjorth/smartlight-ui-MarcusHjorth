@@ -1,19 +1,20 @@
-import BedRoom from "../Components/BedRoom";
 import Rooms from "../Components/Rooms";
+import User from "../Components/User";
 
-
-const Home = () => {
+const Home = (props) => {
     return ( 
         <div>
             <header className="Home_Header">
-                <p className="Header_P">Control</p>
-                <p className="Header_P">Panel</p>
+                <div className="Home_Header_Text">
+                    <p className="Header_P">Control</p>
+                    <p className="Header_P">Panel</p>
+                </div>
+                <User />
             </header>
 
-            <Rooms />
+            <Rooms data={props.data} />
         </div>
      );
-    }
-    //<Nav />
+}
  
 export default Home;

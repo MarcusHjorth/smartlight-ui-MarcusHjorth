@@ -1,52 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
 
+
+
 :root {
     --color-primary: #F6F8FB;
     --color-secondary: #FFFFFF;
     --color-background: #0A4DA2;
     --color-DarkPurple: #002D67;
+    --color-Lights: #FFA939;
 }
-
 
 body {
     background-color: var(--color-background);
     margin: 0px;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 370px;
 }
 
 .Home_Header {
     padding: 20px;
-    margin-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
+
+.Home_Header_Text {
+    color: white;
+}
+
 .Header_P {
     color: var(--color-primary);
-    width: 50px;
+    width: 100px;
     margin: 0px;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bolder;
-}
-
-
-.Rooms {
-    position: absolute;
-    bottom: 75px;
-    
-    background-color: var(--color-primary);
-    color: var(--color-DarkPurple);
-    height: 550px;
-    width: 350px;
-
-    padding: 20px;
-
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
 }
 
 .Nav {
     position: absolute;
     bottom: 0px;
-    width: 100%;
+    width: 390px;
     height: 75px;
     background-color: var(--color-secondary);
     display: flex;
@@ -56,4 +55,53 @@ body {
 
 .NavIcons {
     margin: 0px;
+}
+
+.Rooms {
+    position: absolute;
+    bottom: 75px;
+    
+    background-color: var(--color-primary);
+    color: var(--color-DarkPurple);
+    height: 580px;
+    width: 350px;
+
+    padding: 20px;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+
+/* ----------- ROOMS ---------- */
+
+
+.Room_Display {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    
+}
+.Room_Layout {
+    padding: 20px;
+    background-color :var(--color-secondary);
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px 0px rgb(231, 231, 231);
+}
+
+.Room_Layout_title {
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.Room_Layout_lights {
+    margin: 0px;
+    color: var(--color-Lights);
+    font-size: 16px;
+    text-decoration: none;
 }
