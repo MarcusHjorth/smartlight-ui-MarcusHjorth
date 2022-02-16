@@ -25,12 +25,6 @@ const RoomDetails = (props) => {
     console.log(id)
     console.log(props.data.id)
 
-   if ( id == props.data.id) {
-       console.log("Hello")
-   } else {
-       console.log("no")
-   }
-
 
 
 
