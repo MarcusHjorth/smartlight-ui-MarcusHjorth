@@ -1,3 +1,4 @@
+/*
 .Room_Header {
     display: flex;
     flex-direction: row;
@@ -54,7 +55,7 @@
 }
 
 /* ------------- INTENSITY ---------- */
-
+/*
 .Intensity_Container {
     margin-left: 0px;
     margin-right: 0px;
@@ -67,7 +68,7 @@
 }
 
 /* ------------- COLORS ------------- */
-
+/*
 .Color_Selection {
     display: flex;
     flex-direction: row;
@@ -108,7 +109,7 @@
 
 
 /* ------------- SCENES ------------- */
-
+/*
 .Scene_Container {
     display: grid;
     grid-template-columns: 150px 150px;
@@ -152,3 +153,4 @@
     background: rgb(137,221,148);
     background: linear-gradient(10deg, rgba(137,221,148,1) 0%, rgba(191,236,146,1) 100%);
 }
+*/

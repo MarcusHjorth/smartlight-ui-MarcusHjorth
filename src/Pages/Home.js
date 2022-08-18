@@ -1,20 +1,24 @@
+import BackgroundBubles from "../Components/BackgroundBubles";
 import Rooms from "../Components/Rooms";
 import User from "../Components/User";
+
 
 const Home = (props) => {
     return ( 
         <div>
-            <header className="Home_Header">
-                <div className="Home_Header_Text">
-                    <p className="Header_P">Control</p>
-                    <p className="Header_P">Panel</p>
+            <BackgroundBubles />
+            <header className="flex flex-row justify-between mx-[2rem] py-[2rem] items-center">
+                <div className="flex flex-row text-white text-[32px]">
+                    <p className="font-bold">Control</p>
+                    <p className="">Panel</p>
                 </div>
                 <User />
             </header>
 
-            <Rooms data={props.data} />
+            <Rooms />
+
         </div>
      );
 }
- 
+// til Rooms --- data={props.data}
 export default Home;

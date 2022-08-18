@@ -1,8 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
 
+.colorSelector {
+    @apply rounded-full h-[30px] w-[30px]
+}
 
-
-/* :root {
+.sceneSelector {
+    @apply rounded-md h-[50px] w-[150px] flex justify-center flex-row text-white items-center
+}
+/* 
+:root {
     --color-primary: #F6F8FB;
     --color-secondary: #FFFFFF;
     --color-background: #0A4DA2;
@@ -29,6 +39,7 @@ body {
     align-items: center;
 
 }
+
 .Home_Header_Text {
     color: white;
 }
@@ -64,16 +75,15 @@ body {
     color: var(--color-DarkPurple);
     height: 580px;
     width: 350px;
-    
+
     padding: 20px;
-    
+
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
 
 
-*/
 /* ----------- ROOMS ---------- */
 
 /*
@@ -104,6 +114,4 @@ body {
     color: var(--color-Lights);
     font-size: 16px;
     text-decoration: none;
-} 
-
-*/
+} */
