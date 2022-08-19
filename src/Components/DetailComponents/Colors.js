@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import axios from "axios";
 import ColorChangeButton from './ColorChangeButton';
 
 const Colors = () => {

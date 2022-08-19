@@ -1,0 +1,17 @@
+
+Zigbee opgave
+
+
+Zigbee er en protokol som bruges til at forbinde smart enheder i et hjemmenetværk. 
+
+Dette kunne for eksempel være lys eller aircondition. Zigbee bruger IEEE 802.15.4 
+
+protokollen med 2.4 GHz, hvilket Bluetooth og WIFI også bruger. Men i modsætning til 
+
+WIFI har Zigbee en kortere rækkevidde på omkring 10 til 20 meter inden døres. Den lavere 
+
+rækkevidde grundes, at det bruger mindre strøm og dermed øger batterilevetiden markant 
+
+for Zigbee enheder. Zigbee enheder er sikret med 128 bit krypteringsnøgler. For en 128 
+
+bit nøgle vil det sige at krypteringsrunden har kørt 10 gange.

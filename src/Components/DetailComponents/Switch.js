@@ -1,28 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import { useParams } from 'react-router-dom';
 
 const Switch = () => {
     const URL = "http://192.168.8.100/api/TtxPSfr7mK8-5hShghYZ8e4EvjzkNuAHRvu1jm9h"
     const SingleLight = URL + "/lights/52/state"
-    const GroupLights = URL + "/groups/18/action"
-    const LightState = URL + "/lights/52"
+    const GroupLights = URL + "/groups/"
 
+    const [ rooms, setRooms ] = useState()
+    const { id } = useParams()
     const [ on, setOn ] = useState(null)
+
 
     useEffect(() => {
         axios({
-            url: SingleLight,
+            url: GroupLights + id  + "/action",
             method: "PUT",
             data: {
                 on,
             }
+        }).then(request => { 
+            setRooms(request.data)
         })
-    }, [on])
+    }, [ on ])
 
     useEffect(() => {
         axios({
-            url: LightState,
+            url: GroupLights + id,
             method: "GET",
+            data: {
+                on,
+            }
         })
         .then((res ) => {
             setOn(res.data.state.on)

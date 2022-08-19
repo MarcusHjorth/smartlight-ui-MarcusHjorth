@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const BackgroundBubles = () => {
     return ( 
-        <motion.div className="z-[-10] relative w-full overflow-hidden"
+        <motion.div className=" relative w-full overflow-hidden"
             initial={{y: 20}}
             animate={{
                 y: 60,
